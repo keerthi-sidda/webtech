@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<style>
+body{
+   background-color : #E6E6FA;
+}
+h1{
+   font-family : Serifs;
+   text-align : center;
+   color : #FFFFFF;
+}
+.para{
+  text-align : center;
+  color : #008000;
+}
+fieldset{
+  background-color : #87CEFA;
+  width : 70%;
+  margin : auto;
+}
+legend{
+   background-color : #000080;
+   color : #FFFFFF;
+   padding : 3px 5px;
+}
+div{
+ margin : auto;
+ width : 71%;
+ background-color : #000080;
+}
+.table1{
+   cellspacing : 2px;
+   cellpadding : 2px;
+}
+.table2{
+   cellspacing : 2px;
+   cellpadding : 2px;
+}
+.table3{
+   cellspacing : 2px;
+   cellpadding : 2px;
+}
+footer{
+    text-align : center;
+    color : blue;
+}
+</style>
+</head>
+<body>
+<p class="para"><strong>Welcome to National Institute of Technology Patna!</strong></p>
+<div><h1>Registration</h1></div>
+<form>
+<fieldset>
+<legend>BASIC DETAILS</legend>
+<table class="table1">
+   <tr>
+       <td>Form Number</td>
+       <td><input type="text"></td>
+   </tr>
+   <tr>
+       <td>Name</td>
+       <td><input type="text"></td>
+   </tr>
+   <tr>
+       <td>Roll Number</td>
+       <td><input type="Number"></td>
+   </tr>
+   <tr>
+       <td>Gender</td>
+       <td>Male<input type="radio" value="Male" name="gender">Female<input type="radio" value="Female" name="gender"></td>
+   </tr>
+   <tr>
+       <td>DOB</td>
+       <td><input type="date"></td>
+   </tr>
+   <tr>
+       <td>PWD</td>
+       <td>YES<input type="radio" value="YES" name="pwd">NO<input type="radio" value="NO" name="pwd"></td>
+   </tr>
+   <tr>
+       <td>Category</td>
+       <td>
+          <select value="select">
+              <option value="GEN">GEN</option>
+              <option value="OBC">OBC</option>
+              <option value="SC">SC</option>
+              <option value="ST">ST</option>
+          </select>
+       </td>
+   </tr>
+   <tr>
+       <td>Address</td>
+       <td><textarea rows="5" cols="50" maxlength="10"></textarea></td>
+   </tr>
+   <tr>
+       <td>PIN Code</td>
+       <td><input type="Number"></td>
+   </tr>
+   <tr>
+       <td>Phone number<br>of student</td>
+       <td><input type="Number"></td>
+   </tr>
+   <tr>
+       <td>Phone number<br>of guardian</td>
+       <td><input type="Number"></td>
+   </tr>
+</table>
+</fieldset>
+<br>
+<form>
+<fieldset>
+<legend>ACADEMIC INFORMATION</legend>
+<table class="table2">
+   <tr>
+       <td>Course</td>
+       <td>
+          <select value="select">
+              <option value="B.Tech">B.Tech</option>
+              <option value="B.Arch">B.Arch</option>
+              <option value="M.Tech">M.Tech</option>
+              <option value="M.Arch">M.Arch</option> 
+              <option value="M.Tech(Dual Degree)">M.Tech(Dual Degree)</option>
+              <option value="M.Sc.Int">M.Sc.Int</option>
+              <option value="Ph.D">Ph.D</option>              
+          </select>
+       </td>
+   </tr>
+   <tr>
+       <td>Branch</td>
+       <td><input type="text"></td>
+   </tr> 
+   <tr>
+       <td>Semester</td>
+       <td>
+          <select value="select">
+              <option value="1st">1st</option>
+              <option value="3rd">3rd</option>
+              <option value="5th">5th</option>
+              <option value="7th">7th</option>
+          </select>(for which allotment will be done)
+       </td>
+   </tr> 
+   <tr>
+       <td>All India Rank</td>
+       <td><input type="Number">(2020 JEE Main/Gate)</td>
+   </tr> 
+   <tr>
+       <td>Category Rank</td>
+       <td><input type="Number">(2020 JEE Main/Gate)</td>
+   </tr> 
+   <tr>
+       <td>CGPA</td>
+       <td><input type="Number"></td>
+   </tr> 
+   <tr>
+       <td>Backlog</td>
+       <td>YES<input type="radio" value="YES" name="backlog">NO<input type="radio" value="NO" name="backlog"></td>
+   </tr> 
+   <tr>
+       <td>Hostel Accomodation</td>
+       <td>YES<input type="radio" value="YES" name="hostelaccomodation">NO<input type="radio" value="NO" name="hostelaccomodation"></td>
+   </tr> 
+   <tr>
+       <td>Name of Hostel</td>
+       <td><input type="text"></td>
+   </tr> 
+   <tr>
+       <td>Room Number</td>
+       <td><input type="text"></td>
+   </tr> 
+</table>
+</fieldset>
+<br>
+<form>
+<fieldset>
+<legend>ACCOUNT DETAILS FOR REFUNDING PROCESS</legend>
+<table class="table3">
+   <tr>
+      <td>Account Holder Name</td>
+      <td><input type="text">(As per bank passbook)</td>
+   </tr>
+   <tr>
+      <td>Account Number</td>
+      <td><input type="Number"></td>
+   </tr>
+   <tr>
+      <td>IFSC Code</td>
+      <td><input type="text"></td>
+   </tr>
+   <tr>
+      <td>Bank Name</td>
+      <td><input type="text"></td>
+   </tr>
+   <tr>
+      <td>Bank Branch</td>
+      <td><input type="text"></td>
+   </tr>
+</table>
+</fieldset>
+<br>
+<form>
+<fieldset>
+<legend>DECLARATION BY STUDENT</legend>
+<table class="table4">
+   <tr>
+     <td><input type="checkbox" name="agree1" value="agree1">I hereby declare that all the details furnished above are true and correct to the best of my knowledge<br>
+         <input type="checkbox" name="agree1" value="agree1"> Check here to indicate that you have read and agree to the terms and conditions of institution
+     </td>
+   </tr>
+   <tr>
+      <td><input type="submit" value="Submit and Continue">&nbsp&nbsp<input type="reset" value="Reset"></td>
+   </tr>
+</table>
+</fieldset>
+</form>
+<footer>
+<p>All rights reserved</p>
+<a href="mailto:keerthi.sidda1505@gmail.com"><p>@Sidda Keerthi Sri Naga Lakshmi<br>Roll No : 1906092</p></a>
+</footer>
+</body>
+</html>
